@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(medicinebg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .logout-button {
+    background-color: rgb(18, 173, 235);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: rgb(18, 173, 235);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Welcome <span id="username"></span>!</h2>
+  <p>You are now logged in.</p>
+  <button class="logout-button" id="logoutButton">Logout</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (!sessionStorage.getItem("username")) {
+    window.location.href = "index.html";
+  }
+});
+
+// Retrieve username from session storage
+var username = sessionStorage.getItem("username");
+
+// Display username on the welcome page
+document.getElementById("username").textContent = username;
+
+document.getElementById("logoutButton").addEventListener("click", function() {
+  // Prompt for confirmation before logout
+  var logoutConfirmed = confirm("Are you sure you want to logout?");
+  if (logoutConfirmed) {
+    // Clear user details from session or local storage
+    sessionStorage.clear(); // Clear all session storage
+    localStorage.clear(); // Clear all local storage
+
+    // Redirect to index.html after logout
+    window.location.href = "index.html";
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(medicinebg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  
+  .container {
+    width: 400px;
+    height: 440px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; 
+}
+
+  
+  
+  h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 40px; 
+}
+
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; /* Use Google Font as font style */
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(18, 173, 235);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(126, 199, 228);
+  }
+  
+  .error-message {
+    color: #f44336;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-link {
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: rgb(9, 163, 224); /* Change text color to sky blue */
+    text-decoration: none;
+  }
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-container i {
+    position: absolute;
+    top: 50%;
+    color: black;
+  }
+
+  .input-container i.username-icon {
+    left: 10px; /* Adjusted left position for username icon */
+    transform: translateY(-50%);
+  }
+
+  .input-container i.password-icon {
+    left: 10px; /* Adjusted left position for password icon */
+    transform: translateY(-50%);
+  }
+
+  .input-container input {
+    padding-left: 40px; /* Adjusted padding for username and password inputs */
+  }
