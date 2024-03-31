@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome</title>
+<!-- Include Roboto font -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
+    /* Set font family, background color, and flex display for centering */
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -22,6 +24,7 @@
   }
   
   .container {
+    /* Style container */
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
@@ -31,16 +34,19 @@
   }
   
   h2 {
+    /* Style heading */
     color: #333;
     margin-bottom: 20px;
   }
   
   p {
+    /* Style paragraph */
     color: #666;
     margin-bottom: 40px;
   }
   
   .logout-button {
+    /* Style logout button */
     background-color: rgb(18, 173, 235);
     color: white;
     border: none;
@@ -51,6 +57,7 @@
   }
   
   .logout-button:hover {
+    /* Hover effect for logout button */
     background-color: rgb(18, 173, 235);
   }
 </style>
@@ -64,7 +71,9 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  // Check if username is stored in session storage
   if (!sessionStorage.getItem("username")) {
+    // If not, redirect to index.html
     window.location.href = "index.html";
   }
 });
@@ -75,6 +84,7 @@ var username = sessionStorage.getItem("username");
 // Display username on the welcome page
 document.getElementById("username").textContent = username;
 
+// Add event listener to logout button
 document.getElementById("logoutButton").addEventListener("click", function() {
   // Prompt for confirmation before logout
   var logoutConfirmed = confirm("Are you sure you want to logout?");
