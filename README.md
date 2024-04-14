@@ -1,4 +1,5 @@
 **Introduction:**
+
 This project presents a simple yet robust login form with user authentication and security measures. The system is designed to handle user accounts securely, utilizing static data for demonstration purposes but with the flexibility to be adapted and integrated into other systems seamlessly. It incorporates password strength validation and error handling prompts for enhanced security and user experience.
 
 Features:
