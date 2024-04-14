@@ -1,4 +1,4 @@
-Introduction:
+**Introduction:**
 This project presents a simple yet robust login form with user authentication and security measures. The system is designed to handle user accounts securely, utilizing static data for demonstration purposes but with the flexibility to be adapted and integrated into other systems seamlessly. It incorporates password strength validation and error handling prompts for enhanced security and user experience.
 
 Features:
@@ -15,7 +15,7 @@ The system is designed to be flexible and adaptable, allowing for easy integrati
 4.Error Handling:
 Comprehensive error handling prompts provide users with informative feedback in case of incorrect login attempts or other issues.
 
-INSTALLATION:
+**INSTALLATION:**
 To access and utilize the login system, follow these steps:
 
 1.Access the Application:
@@ -42,5 +42,5 @@ In case of incorrect login credentials or other errors, the system will prompt y
 3.Account Management:
 For future development and integration, account management functionalities such as registration, password reset, and profile management can be implemented.
 
-Conclusion:
+**Conclusion:**
 The Secure Login System presented in this project offers a foundational solution for user authentication and security in various applications. With its robust features, flexibility, and user-friendly design, it serves as a reliable component for ensuring the integrity and confidentiality of user accounts and information.
